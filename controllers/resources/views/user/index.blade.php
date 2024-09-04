@@ -10,7 +10,11 @@
     <h1>Users List:</h1>
         <ul>
             @forelse ($users as $user)  
-                <li>{{ $user->name }}</li>
+                <li>
+                    {{ $user->name }}
+                    <strong>Edad: </strong>
+                    {{ $user->age }}
+                </li>
             @empty
                 <li>Users List empty</li>
             @endforelse
