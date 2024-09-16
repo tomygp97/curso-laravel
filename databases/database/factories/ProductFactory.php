@@ -18,9 +18,9 @@ class ProductFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            // 'short_description' => ,
-            // 'description' => ,
-            // 'price' =>
+            'short_description' => fake()->sentence(),
+            'description' => fake()->paragraph(3),
+            'price' =>fake()->numberBetween(1, 200),
         ];
     }
 }
